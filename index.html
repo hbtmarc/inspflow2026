@@ -3,100 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>InspFlow Revitalização | Story App MVP</title>
-  <meta name="description" content="MVP estático da narrativa InspFlow Revitalização com 10 cenas e navegação por hash.">
-  <meta name="theme-color" content="#123a73">
+  <title>InspFlow Revitalização</title>
+  <meta name="description" content="Narrativa interativa da revitalização InspFlow com visão ponta a ponta.">
+  <meta name="theme-color" content="#122b4f">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./css/tokens.css">
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/components.css">
-  <link rel="stylesheet" href="./css/presenter.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23122b4f'/><text x='5' y='24' font-size='22' fill='white'>I</text></svg>">
+  <link rel="stylesheet" href="./app.css">
 </head>
 <body>
-  <a class="skip-link" href="#scene-root">Pular para o conteúdo</a>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-  <div class="app-shell">
-    <header class="site-header">
-      <div class="brand-bar">
-        <div>
-          <div class="brand-title">InspFlow Revitalização</div>
-          <div class="brand-subtitle">Story-app MVP em HTML, CSS e JavaScript puro</div>
+  <div class="shell">
+    <header class="header">
+      <div class="header-row">
+        <div class="brand">
+          <strong class="brand-name">InspFlow</strong>
+          <span class="brand-tag">Revitalização</span>
         </div>
-        <div class="status" id="status-label" aria-live="polite">Cena 1 de 10</div>
+        <span class="status" id="status-label" aria-live="polite">Cena 1 de 10</span>
       </div>
 
-      <div class="top-progress" aria-label="Progresso da narrativa">
-        <span id="progress-value"></span>
+      <div class="progress" aria-label="Progresso da narrativa">
+        <span id="progress-bar"></span>
       </div>
 
-      <nav class="scene-nav" id="scene-nav" aria-label="Navegação de cenas"></nav>
+      <nav class="nav" id="scene-nav" aria-label="Navegação de cenas"></nav>
     </header>
 
-    <main id="scene-root" tabindex="-1"></main>
+    <main id="main" tabindex="-1"></main>
 
-    <footer class="controls" aria-label="Controles da apresentação">
-      <div class="controls-left">
+    <footer class="toolbar" aria-label="Controles da apresentação">
+      <div class="toolbar-group">
         <button class="btn" id="btn-prev" type="button">Anterior</button>
-        <button class="btn btn-primary" id="btn-next" type="button">Próxima</button>
+        <button class="btn btn--primary" id="btn-next" type="button">Próxima</button>
       </div>
-
-      <div class="controls-right">
-        <button class="btn btn-ghost" id="btn-home" type="button">Início</button>
-        <button class="btn btn-ghost" id="btn-end" type="button">Fim</button>
-        <button class="btn" id="btn-presenter" type="button" aria-pressed="false">Modo apresentador</button>
+      <div class="toolbar-group">
+        <button class="btn btn--ghost" id="btn-home" type="button">Início</button>
+        <button class="btn btn--ghost" id="btn-end" type="button">Fim</button>
+        <button class="btn" id="btn-presenter" type="button" aria-pressed="false">Apresentador</button>
       </div>
     </footer>
 
-    <div class="presenter-placeholder" aria-live="off">
-      <strong>Modo apresentador:</strong> placeholder visual nesta etapa MVP.
-      Use <span class="kbd">←</span>/<span class="kbd">→</span> e <span class="kbd">Home</span>/<span class="kbd">End</span> para navegar.
-    </div>
+    <p class="presenter-hint" aria-live="off">
+      <strong>Modo apresentador ativo.</strong> Use <kbd>←</kbd>/<kbd>→</kbd> e <kbd>Home</kbd>/<kbd>End</kbd>.
+    </p>
   </div>
 
-  <aside id="presenter-console" class="presenter-console" hidden aria-label="Console do apresentador">
-    <header class="presenter-header">
-      <h2 class="presenter-title">Console do Apresentador</h2>
-      <div class="presenter-timer-wrap">
-        <span class="presenter-chip" id="presenter-timer">00:00</span>
-        <span class="presenter-timer-state" id="presenter-timer-state">Em execução</span>
+  <aside id="presenter-console" class="console" hidden aria-label="Console do apresentador">
+    <header class="console-header">
+      <h2 class="console-title">Console do Apresentador</h2>
+      <div class="console-timer-wrap">
+        <span class="console-chip" id="console-timer">00:00</span>
+        <span class="console-state" id="console-timer-state">Em execução</span>
       </div>
     </header>
 
-    <section class="presenter-block" aria-live="polite">
-      <h3 class="presenter-block-title">Cena atual</h3>
-      <p class="presenter-scene-title" id="presenter-scene-title">Aguardando navegação</p>
+    <section class="console-block" aria-live="polite">
+      <h3 class="console-block-title">Cena atual</h3>
+      <p class="console-scene-name" id="console-scene-title">Aguardando navegação</p>
     </section>
 
-    <section class="presenter-block">
-      <h3 class="presenter-block-title">Notas do apresentador</h3>
-      <p class="presenter-notes" id="presenter-notes">Sem notas desta cena.</p>
+    <section class="console-block">
+      <h3 class="console-block-title">Notas do apresentador</h3>
+      <p class="console-notes" id="console-notes">Sem notas desta cena.</p>
     </section>
 
-    <section class="presenter-block">
-      <h3 class="presenter-block-title">Lista de cenas</h3>
-      <ul class="presenter-scene-list" id="presenter-scene-list"></ul>
+    <section class="console-block">
+      <h3 class="console-block-title">Lista de cenas</h3>
+      <ul class="console-scene-list" id="console-scene-list"></ul>
     </section>
 
-    <footer class="presenter-controls" aria-label="Controles do apresentador">
+    <footer class="console-controls" aria-label="Controles do apresentador">
       <button class="btn" id="pc-prev" type="button">Anterior</button>
-      <button class="btn btn-primary" id="pc-next" type="button">Próxima</button>
+      <button class="btn btn--primary" id="pc-next" type="button">Próxima</button>
       <button class="btn" id="pc-home" type="button">Início</button>
       <button class="btn" id="pc-end" type="button">Fim</button>
       <button class="btn" id="pc-fullscreen" type="button" aria-pressed="false">Tela cheia</button>
-      <button class="btn btn-ghost" id="pc-helpers" type="button" aria-pressed="true">Alternar auxiliares (P)</button>
+      <button class="btn btn--ghost" id="pc-helpers" type="button" aria-pressed="true">Alternar auxiliares (P)</button>
     </footer>
   </aside>
 
-  <div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <div id="sr-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
-  <div id="update-toast" class="update-toast" hidden role="status" aria-live="polite">
+  <div id="update-toast" class="toast" hidden role="status" aria-live="polite">
     <p>Nova versão disponível.</p>
-    <div class="update-toast-actions">
-      <button type="button" id="update-refresh" class="btn btn-primary">Atualizar agora</button>
-      <button type="button" id="update-dismiss" class="btn">Depois</button>
+    <div class="toast-actions">
+      <button type="button" id="update-refresh" class="btn btn--primary btn--sm">Atualizar</button>
+      <button type="button" id="update-dismiss" class="btn btn--sm">Depois</button>
     </div>
   </div>
 
-  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>

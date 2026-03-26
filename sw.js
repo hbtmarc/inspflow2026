@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'inspflow-v1.0.0';
+const CACHE_VERSION = 'inspflow-v2.0.0';
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const HTML_CACHE = `${CACHE_VERSION}-html`;
@@ -9,31 +9,9 @@ const PRECACHE_URLS = [
   './offline.html',
   './404.html',
   './manifest.webmanifest',
-  './css/tokens.css',
-  './css/base.css',
-  './css/components.css',
-  './css/presenter.css',
-  './js/app.js',
-  './js/router.js',
-  './js/state.js',
-  './js/a11y.js',
-  './js/presenter.js',
-  './js/components/clickable-demo.js',
-  './js/components/flow-map.js',
-  './js/components/kpi-panel.js',
-  './js/components/equip-team.js',
-  './js/components/planner-compare.js',
-  './js/components/closing-scene.js',
-  './data/story.json',
-  './data/demo.hotspots.json',
-  './data/inspection.flow.json',
-  './data/end.flow.json',
-  './data/kpis.sample.json',
-  './data/equipment.sample.json',
-  './data/team.sample.json',
-  './data/planner.compare.json',
-  './data/planner.scenarios.json',
-  './data/closing.sample.json',
+  './app.css',
+  './app.js',
+  './story.json',
   './assets/img/inspflow/menu-atividades.svg'
 ];
 

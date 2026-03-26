@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "app": "InspFlow Revitalização",
+    "versao": "MVP 2",
+    "idioma": "pt-BR"
+  },
+  "scenes": [
+    {
+      "id": "home",
+      "rotulo": "Home",
+      "kicker": "InspFlow Revitalização",
+      "titulo": "Base MVP para nova jornada de inspeção",
+      "lead": "Um story-app simples para alinhar visão, fluxo e próximos passos do produto.",
+      "notas": "Abra a apresentação reforçando que este MVP reduz fricção e cria base sólida para evoluções rápidas.",
+      "pontos": [
+        "Narrativa única para time técnico e negócio",
+        "Arquitetura estática pronta para GitHub Pages",
+        "Evolução incremental sem retrabalho"
+      ],
+      "placeholder": "Abertura estratégica"
+    },
+    {
+      "id": "contexto",
+      "rotulo": "Contexto",
+      "kicker": "Diagnóstico atual",
+      "titulo": "Onde estamos hoje",
+      "lead": "A operação convive com dados fragmentados, baixa rastreabilidade e esforço manual.",
+      "notas": "Destaque impactos práticos: retrabalho, lentidão na tomada de decisão e risco operacional por falta de visão única.",
+      "pontos": [
+        "Evidências espalhadas em múltiplos canais",
+        "Risco de retrabalho em cada ciclo",
+        "Pouca visibilidade em tempo real para decisão"
+      ],
+      "placeholder": "Pontos de dor"
+    },
+    {
+      "id": "o-que-e",
+      "rotulo": "O que é",
+      "kicker": "Definição",
+      "titulo": "O que é o InspFlow revitalizado",
+      "lead": "Uma camada digital leve para organizar inspeções ponta a ponta com foco em clareza operacional.",
+      "notas": "Explique que não é mais uma ferramenta isolada; é uma estrutura para padronizar execução e leitura de dados.",
+      "pontos": [
+        "Fluxo orientado por etapas",
+        "Padrão único de registro",
+        "Consolidação de dados para ação"
+      ],
+      "placeholder": "Produto em foco"
+    },
+    {
+      "id": "demo-menu",
+      "rotulo": "Demo menu",
+      "kicker": "Experiência",
+      "titulo": "Menu inicial da demonstração",
+      "lead": "Entrada rápida para os principais caminhos de uso, com linguagem objetiva e estrutura intuitiva.",
+      "notas": "Use os hotspots para mostrar como o operador encontra rapidamente inspeção, pendências e alertas prioritários.",
+      "pontos": [
+        "Acesso direto aos fluxos críticos",
+        "Hierarquia simples para novos usuários",
+        "Navegação pronta para expansão"
+      ],
+      "placeholder": "Tela de menu"
+    },
+    {
+      "id": "fluxo-inspecao",
+      "rotulo": "Fluxo inspeção",
+      "kicker": "Operação",
+      "titulo": "Fluxo de inspeção em campo",
+      "lead": "Sequência guiada para registrar inspeções com menos atrito e maior consistência dos dados.",
+      "notas": "Enfatize padronização de checklist e evidências para reduzir variações entre equipes e turnos.",
+      "pontos": [],
+      "placeholder": "Execução em campo"
+    },
+    {
+      "id": "fluxo-end",
+      "rotulo": "Fluxo end",
+      "kicker": "Conclusão",
+      "titulo": "Fechamento do fluxo ponta a ponta",
+      "lead": "Da coleta ao encerramento, com status explícito para facilitar continuidade e auditoria.",
+      "notas": "Mostre que o fechamento não é só conclusão técnica, mas também rastreabilidade para governança.",
+      "pontos": [],
+      "placeholder": "Fim do ciclo"
+    },
+    {
+      "id": "equipamentos-equipe",
+      "rotulo": "Equipamentos e equipe",
+      "kicker": "Capacidade",
+      "titulo": "Visão integrada de equipamentos e equipe",
+      "lead": "Relacionar recursos, disponibilidade e responsáveis reduz riscos de execução.",
+      "notas": "Conecte essa visão ao ganho de previsibilidade: menos conflitos de agenda e melhor alocação de recursos.",
+      "pontos": [],
+      "placeholder": "Recursos e pessoas"
+    },
+    {
+      "id": "visao-planejador",
+      "rotulo": "Visão planejador",
+      "kicker": "Planejamento",
+      "titulo": "Painel de planejamento diário",
+      "lead": "O planejador acompanha pendências, janelas e prioridades com visão consolidada.",
+      "notas": "Destaque decisões rápidas com contexto completo, sem depender de múltiplas planilhas ou mensagens dispersas.",
+      "pontos": [],
+      "placeholder": "Planejamento operacional"
+    },
+    {
+      "id": "painel-gerencial",
+      "rotulo": "Painel gerencial",
+      "kicker": "Gestão",
+      "titulo": "Painel gerencial para decisão",
+      "lead": "Indicadores de execução e qualidade para acompanhar avanço e desbloquear gargalos.",
+      "notas": "Foque em leitura executiva: tendência, desvio e priorização para ação imediata da liderança.",
+      "pontos": [],
+      "placeholder": "Métricas e governança"
+    },
+    {
+      "id": "encerramento",
+      "rotulo": "Encerramento",
+      "kicker": "Próximo ciclo",
+      "titulo": "Encerramento e próximos passos",
+      "lead": "MVP validado como fundação para evoluções funcionais com baixo custo de manutenção.",
+      "notas": "Feche com próximos passos objetivos: validação com stakeholders, priorização do backlog e ritmo incremental.",
+      "pontos": [],
+      "placeholder": "Roadmap imediato"
+    }
+  ],
+  "demoHotspots": [
+    { "id": "menu-inspecao", "x": 5, "y": 20, "w": 32, "h": 10, "title": "Menu Inspeção", "body": "Acesso principal para iniciar uma nova inspeção com checklist guiado e registro padronizado.", "ariaLabel": "Hotspot do menu inspeção", "routeNext": "#fluxo-inspecao" },
+    { "id": "menu-end", "x": 5, "y": 33, "w": 32, "h": 10, "title": "Menu End-to-End", "body": "Consolida o fluxo de fechamento com status de cada etapa e evidências para auditoria.", "ariaLabel": "Hotspot do menu end to end", "routeNext": "#fluxo-end" },
+    { "id": "notificacoes", "x": 68, "y": 6, "w": 10, "h": 10, "title": "Notificações", "body": "Sinaliza pendências críticas e novos eventos para ação rápida da equipe.", "ariaLabel": "Hotspot de notificações" },
+    { "id": "pendencias", "x": 73, "y": 22, "w": 22, "h": 16, "title": "Painel de Pendências", "body": "Lista atividades abertas por prioridade, facilitando triagem diária do planejador.", "ariaLabel": "Hotspot do painel de pendências", "routeNext": "#visao-planejador" },
+    { "id": "coluna-inspecoes", "x": 41, "y": 22, "w": 26, "h": 58, "title": "Coluna de Inspeções", "body": "Área central com cartões de inspeção em andamento, concluídas e com bloqueio.", "ariaLabel": "Hotspot da coluna de inspeções", "routeNext": "#painel-gerencial" }
+  ],
+  "flows": {
+    "inspecao": {
+      "titulo": "Fluxo de inspeção operacional",
+      "descricao": "Acompanhe as etapas críticas da inspeção e o que pode travar cada ponto.",
+      "layout": "stepper",
+      "stages": [
+        { "id": "tag", "label": "TAG", "status": "concluido", "resumo": "Identificação validada e vínculo com ativo confirmado.", "detalhes": "Nesta etapa a TAG é conferida com cadastro oficial para evitar abertura em ativo incorreto.", "oQueTrava": "TAG ilegível ou divergência entre etiqueta física e cadastro.", "criterios": ["Ativo identificado", "TAG associada ao local correto", "Registro inicial salvo"] },
+        { "id": "abertura", "label": "Abertura", "status": "andamento", "resumo": "Ordem aberta com responsável, turno e prioridade.", "detalhes": "A abertura organiza contexto operacional para execução consistente da inspeção em campo.", "oQueTrava": "Campos obrigatórios incompletos ou responsável não definido.", "criterios": ["Responsável informado", "Prioridade definida", "Prazo inicial registrado"] },
+        { "id": "servicos", "label": "Serviços", "status": "bloqueio", "resumo": "Execução parcial aguardando liberação de recurso.", "detalhes": "A equipe registra serviços realizados e pendências técnicas durante a atividade.", "oQueTrava": "Dependência de equipe de apoio e indisponibilidade de equipamento.", "criterios": ["Checklist técnico percorrido", "Evidências coletadas", "Pendências mapeadas"] },
+        { "id": "validacao", "label": "Validação", "status": "andamento", "resumo": "Conferência de conformidade e consistência dos apontamentos.", "detalhes": "Validação garante que o registro atende critérios de qualidade antes da conclusão.", "oQueTrava": "Evidência insuficiente ou inconsistência entre campo e sistema.", "criterios": ["Checklist validado", "Pendências justificadas", "Conformidade registrada"] },
+        { "id": "conclusao", "label": "Conclusão", "status": "andamento", "resumo": "Encerramento operacional com status final e histórico.", "detalhes": "Etapa final para consolidar decisão e preparar integração com o fluxo END.", "oQueTrava": "Aprovação final pendente ou falta de anexo obrigatório.", "criterios": ["Status final definido", "Resumo operacional preenchido", "Pronto para transição ao END"] }
+      ],
+      "cta": { "label": "Avançar para fluxo END", "route": "#fluxo-end" }
+    },
+    "end": {
+      "titulo": "Timeline END da execução",
+      "descricao": "Acompanhe a trilha de fechamento com critérios claros por etapa.",
+      "layout": "timeline",
+      "stages": [
+        { "id": "cadastro", "label": "Cadastro", "status": "concluido", "resumo": "Dados-base do ciclo cadastrados.", "detalhes": "Concentra dados iniciais de contexto, responsável e data de referência.", "criterios": ["Dados obrigatórios preenchidos", "Origem da demanda registrada", "Responsável confirmado"] },
+        { "id": "execucao", "label": "Execução", "status": "concluido", "resumo": "Atividades de campo executadas conforme plano.", "detalhes": "Registros operacionais e evidências da execução são consolidados.", "criterios": ["Atividades concluídas", "Checklist de segurança aplicado", "Evidências anexadas"] },
+        { "id": "lancamento", "label": "Lançamento", "status": "andamento", "resumo": "Lançamento técnico em revisão.", "detalhes": "Dados são lançados para composição final do ciclo END.", "criterios": ["Campos técnicos consistentes", "Referência de ordem vinculada", "Sem pendências críticas"] },
+        { "id": "check", "label": "Check", "status": "andamento", "resumo": "Checklist de qualidade em andamento.", "detalhes": "Conferência de conformidade antes de seguir para análise.", "criterios": ["Verificação de integridade", "Conferência de evidências", "Pendências classificadas"] },
+        { "id": "analise", "label": "Análise", "status": "bloqueio", "resumo": "Análise aguardando definição de exceção.", "detalhes": "Equipe de validação analisa desvios e aprova tratativas.", "criterios": ["Desvio avaliado", "Plano de ação associado", "Aprovação registrada"] },
+        { "id": "anexo", "label": "Anexo", "status": "andamento", "resumo": "Consolidação final dos anexos obrigatórios.", "detalhes": "Fechamento documental para auditoria e governança.", "criterios": ["Documentos anexados", "Versionamento confirmado", "Pronto para encerramento"] }
+      ],
+      "cta": { "label": "Seguir para equipamentos e equipe", "route": "#equipamentos-equipe" }
+    }
+  },
+  "kpis": {
+    "filtros": {
+      "periodo": [
+        { "id": "hoje", "label": "Hoje" },
+        { "id": "7d", "label": "7 dias" },
+        { "id": "30d", "label": "30 dias" }
+      ],
+      "area": [
+        { "id": "todas", "label": "Todas as áreas" },
+        { "id": "refino", "label": "Refino" },
+        { "id": "utilidades", "label": "Utilidades" },
+        { "id": "manutencao", "label": "Manutenção" }
+      ],
+      "status": [
+        { "id": "todos", "label": "Todos" },
+        { "id": "ok", "label": "OK" },
+        { "id": "atencao", "label": "Atenção" },
+        { "id": "bloqueio", "label": "Bloqueio" }
+      ]
+    },
+    "registros": [
+      { "periodo": "hoje", "area": "refino", "status": "ok", "taxaAbertura": 82, "sessoes": 20, "ttiEstimado": 1.9, "inpEstimado": 140, "itensConcluidos": 15, "itensComBloqueio": 1, "gargalos": { "aprovacao": 1, "recurso": 0, "qualidade": 1 } },
+      { "periodo": "hoje", "area": "refino", "status": "atencao", "taxaAbertura": 73, "sessoes": 14, "ttiEstimado": 2.7, "inpEstimado": 220, "itensConcluidos": 9, "itensComBloqueio": 2, "gargalos": { "aprovacao": 2, "recurso": 1, "qualidade": 1 } },
+      { "periodo": "hoje", "area": "refino", "status": "bloqueio", "taxaAbertura": 58, "sessoes": 8, "ttiEstimado": 3.5, "inpEstimado": 280, "itensConcluidos": 3, "itensComBloqueio": 4, "gargalos": { "aprovacao": 3, "recurso": 3, "qualidade": 2 } },
+      { "periodo": "hoje", "area": "utilidades", "status": "ok", "taxaAbertura": 85, "sessoes": 16, "ttiEstimado": 1.7, "inpEstimado": 130, "itensConcluidos": 13, "itensComBloqueio": 1, "gargalos": { "aprovacao": 1, "recurso": 1, "qualidade": 0 } },
+      { "periodo": "hoje", "area": "utilidades", "status": "atencao", "taxaAbertura": 71, "sessoes": 12, "ttiEstimado": 2.5, "inpEstimado": 210, "itensConcluidos": 8, "itensComBloqueio": 2, "gargalos": { "aprovacao": 2, "recurso": 1, "qualidade": 1 } },
+      { "periodo": "hoje", "area": "utilidades", "status": "bloqueio", "taxaAbertura": 55, "sessoes": 7, "ttiEstimado": 3.4, "inpEstimado": 295, "itensConcluidos": 2, "itensComBloqueio": 4, "gargalos": { "aprovacao": 2, "recurso": 3, "qualidade": 2 } },
+      { "periodo": "hoje", "area": "manutencao", "status": "ok", "taxaAbertura": 80, "sessoes": 18, "ttiEstimado": 2.0, "inpEstimado": 150, "itensConcluidos": 14, "itensComBloqueio": 1, "gargalos": { "aprovacao": 1, "recurso": 1, "qualidade": 1 } },
+      { "periodo": "hoje", "area": "manutencao", "status": "atencao", "taxaAbertura": 68, "sessoes": 13, "ttiEstimado": 2.8, "inpEstimado": 235, "itensConcluidos": 8, "itensComBloqueio": 3, "gargalos": { "aprovacao": 2, "recurso": 2, "qualidade": 1 } },
+      { "periodo": "hoje", "area": "manutencao", "status": "bloqueio", "taxaAbertura": 52, "sessoes": 9, "ttiEstimado": 3.7, "inpEstimado": 310, "itensConcluidos": 2, "itensComBloqueio": 5, "gargalos": { "aprovacao": 3, "recurso": 3, "qualidade": 2 } },
+      { "periodo": "7d", "area": "refino", "status": "ok", "taxaAbertura": 84, "sessoes": 92, "ttiEstimado": 1.8, "inpEstimado": 135, "itensConcluidos": 69, "itensComBloqueio": 4, "gargalos": { "aprovacao": 3, "recurso": 2, "qualidade": 2 } },
+      { "periodo": "7d", "area": "refino", "status": "atencao", "taxaAbertura": 74, "sessoes": 63, "ttiEstimado": 2.6, "inpEstimado": 215, "itensConcluidos": 40, "itensComBloqueio": 9, "gargalos": { "aprovacao": 6, "recurso": 4, "qualidade": 3 } },
+      { "periodo": "7d", "area": "refino", "status": "bloqueio", "taxaAbertura": 59, "sessoes": 35, "ttiEstimado": 3.4, "inpEstimado": 285, "itensConcluidos": 13, "itensComBloqueio": 15, "gargalos": { "aprovacao": 8, "recurso": 8, "qualidade": 5 } },
+      { "periodo": "7d", "area": "utilidades", "status": "ok", "taxaAbertura": 86, "sessoes": 76, "ttiEstimado": 1.7, "inpEstimado": 130, "itensConcluidos": 58, "itensComBloqueio": 3, "gargalos": { "aprovacao": 2, "recurso": 2, "qualidade": 1 } },
+      { "periodo": "7d", "area": "utilidades", "status": "atencao", "taxaAbertura": 72, "sessoes": 54, "ttiEstimado": 2.5, "inpEstimado": 205, "itensConcluidos": 35, "itensComBloqueio": 8, "gargalos": { "aprovacao": 5, "recurso": 4, "qualidade": 3 } },
+      { "periodo": "7d", "area": "utilidades", "status": "bloqueio", "taxaAbertura": 56, "sessoes": 30, "ttiEstimado": 3.3, "inpEstimado": 290, "itensConcluidos": 11, "itensComBloqueio": 13, "gargalos": { "aprovacao": 7, "recurso": 7, "qualidade": 4 } },
+      { "periodo": "7d", "area": "manutencao", "status": "ok", "taxaAbertura": 81, "sessoes": 88, "ttiEstimado": 1.9, "inpEstimado": 145, "itensConcluidos": 66, "itensComBloqueio": 4, "gargalos": { "aprovacao": 3, "recurso": 2, "qualidade": 2 } },
+      { "periodo": "7d", "area": "manutencao", "status": "atencao", "taxaAbertura": 69, "sessoes": 59, "ttiEstimado": 2.7, "inpEstimado": 225, "itensConcluidos": 37, "itensComBloqueio": 10, "gargalos": { "aprovacao": 6, "recurso": 5, "qualidade": 3 } },
+      { "periodo": "7d", "area": "manutencao", "status": "bloqueio", "taxaAbertura": 54, "sessoes": 33, "ttiEstimado": 3.6, "inpEstimado": 305, "itensConcluidos": 12, "itensComBloqueio": 15, "gargalos": { "aprovacao": 8, "recurso": 8, "qualidade": 5 } },
+      { "periodo": "30d", "area": "refino", "status": "ok", "taxaAbertura": 83, "sessoes": 380, "ttiEstimado": 1.9, "inpEstimado": 145, "itensConcluidos": 290, "itensComBloqueio": 16, "gargalos": { "aprovacao": 12, "recurso": 9, "qualidade": 8 } },
+      { "periodo": "30d", "area": "refino", "status": "atencao", "taxaAbertura": 72, "sessoes": 256, "ttiEstimado": 2.7, "inpEstimado": 225, "itensConcluidos": 164, "itensComBloqueio": 38, "gargalos": { "aprovacao": 22, "recurso": 18, "qualidade": 14 } },
+      { "periodo": "30d", "area": "refino", "status": "bloqueio", "taxaAbertura": 57, "sessoes": 148, "ttiEstimado": 3.5, "inpEstimado": 295, "itensConcluidos": 60, "itensComBloqueio": 71, "gargalos": { "aprovacao": 33, "recurso": 32, "qualidade": 23 } },
+      { "periodo": "30d", "area": "utilidades", "status": "ok", "taxaAbertura": 85, "sessoes": 332, "ttiEstimado": 1.8, "inpEstimado": 138, "itensConcluidos": 252, "itensComBloqueio": 14, "gargalos": { "aprovacao": 11, "recurso": 10, "qualidade": 7 } },
+      { "periodo": "30d", "area": "utilidades", "status": "atencao", "taxaAbertura": 71, "sessoes": 232, "ttiEstimado": 2.6, "inpEstimado": 212, "itensConcluidos": 148, "itensComBloqueio": 33, "gargalos": { "aprovacao": 20, "recurso": 17, "qualidade": 13 } },
+      { "periodo": "30d", "area": "utilidades", "status": "bloqueio", "taxaAbertura": 56, "sessoes": 129, "ttiEstimado": 3.4, "inpEstimado": 288, "itensConcluidos": 51, "itensComBloqueio": 62, "gargalos": { "aprovacao": 31, "recurso": 29, "qualidade": 21 } },
+      { "periodo": "30d", "area": "manutencao", "status": "ok", "taxaAbertura": 80, "sessoes": 360, "ttiEstimado": 2.0, "inpEstimado": 152, "itensConcluidos": 268, "itensComBloqueio": 18, "gargalos": { "aprovacao": 13, "recurso": 11, "qualidade": 9 } },
+      { "periodo": "30d", "area": "manutencao", "status": "atencao", "taxaAbertura": 68, "sessoes": 245, "ttiEstimado": 2.8, "inpEstimado": 232, "itensConcluidos": 154, "itensComBloqueio": 37, "gargalos": { "aprovacao": 23, "recurso": 20, "qualidade": 14 } },
+      { "periodo": "30d", "area": "manutencao", "status": "bloqueio", "taxaAbertura": 53, "sessoes": 140, "ttiEstimado": 3.7, "inpEstimado": 308, "itensConcluidos": 54, "itensComBloqueio": 68, "gargalos": { "aprovacao": 34, "recurso": 33, "qualidade": 24 } }
+    ]
+  },
+  "equipment": {
+    "tipos": [
+      { "id": "todos", "label": "Todos" },
+      { "id": "bomba", "label": "Bomba" },
+      { "id": "valvula", "label": "Válvula" },
+      { "id": "sensor", "label": "Sensor" },
+      { "id": "painel", "label": "Painel" }
+    ],
+    "status": [
+      { "id": "todos", "label": "Todos" },
+      { "id": "operacional", "label": "Operacional" },
+      { "id": "atencao", "label": "Atenção" },
+      { "id": "bloqueado", "label": "Bloqueado" }
+    ],
+    "equipamentos": [
+      { "id": "eq-101", "tag": "EQ-101", "nome": "Bomba de recirculação norte", "tipo": "bomba", "status": "operacional", "papelResponsavel": "Técnico de campo", "progresso": 88, "resumo": "Ativo estável com checklist de rotina em dia.", "escopo": "Inspeção diária de vibração e vedação." },
+      { "id": "eq-203", "tag": "EQ-203", "nome": "Válvula de alívio linha B", "tipo": "valvula", "status": "atencao", "papelResponsavel": "Inspetor mecânico", "progresso": 61, "resumo": "Oscilação detectada no último ciclo de validação.", "escopo": "Verificação de pressão, estanqueidade e histórico de acionamento." },
+      { "id": "eq-317", "tag": "EQ-317", "nome": "Sensor térmico setor oeste", "tipo": "sensor", "status": "bloqueado", "papelResponsavel": "Planejador de manutenção", "progresso": 34, "resumo": "Substituição pendente por indisponibilidade de estoque.", "escopo": "Troca de componente e recalibração com equipe elétrica." },
+      { "id": "eq-412", "tag": "EQ-412", "nome": "Painel de comando utilidades", "tipo": "painel", "status": "operacional", "papelResponsavel": "Líder de turno", "progresso": 79, "resumo": "Painel liberado após manutenção preventiva.", "escopo": "Inspeção visual, limpeza técnica e teste funcional." },
+      { "id": "eq-229", "tag": "EQ-229", "nome": "Bomba de transferência sul", "tipo": "bomba", "status": "atencao", "papelResponsavel": "Técnico de campo", "progresso": 56, "resumo": "Necessita nova leitura de vazão para fechamento.", "escopo": "Medição de vazão e ajuste de parâmetros operacionais." },
+      { "id": "eq-188", "tag": "EQ-188", "nome": "Válvula de controle principal", "tipo": "valvula", "status": "operacional", "papelResponsavel": "Inspetor mecânico", "progresso": 92, "resumo": "Comportamento dentro da faixa esperada.", "escopo": "Conferência de abertura/fechamento e vedação." }
+    ]
+  },
+  "team": {
+    "roles": [
+      { "id": "todos", "label": "Todos" },
+      { "id": "tecnico-campo", "label": "Técnico de campo" },
+      { "id": "inspetor-mecanico", "label": "Inspetor mecânico" },
+      { "id": "planejador", "label": "Planejador" },
+      { "id": "lider-turno", "label": "Líder de turno" }
+    ],
+    "members": [
+      { "id": "membro-01", "nome": "Operador Alfa", "role": "tecnico-campo", "responsabilidades": ["Executar inspeções de rotina", "Registrar evidências em campo", "Sinalizar desvios imediatos"], "escopo": "Atuação nas frentes de bombeamento e linhas auxiliares." },
+      { "id": "membro-02", "nome": "Operador Beta", "role": "inspetor-mecanico", "responsabilidades": ["Validar integridade mecânica", "Conferir itens críticos de segurança", "Aprovar checklist técnico"], "escopo": "Foco em válvulas, conjuntos rotativos e pontos de pressão." },
+      { "id": "membro-03", "nome": "Operador Gama", "role": "planejador", "responsabilidades": ["Priorizar pendências por criticidade", "Organizar fila diária", "Acompanhar bloqueios"], "escopo": "Planejamento tático para execução de inspeções e END." },
+      { "id": "membro-04", "nome": "Operador Delta", "role": "lider-turno", "responsabilidades": ["Distribuir atividades no turno", "Acompanhar performance operacional", "Conduzir tratativa de incidentes"], "escopo": "Coordenação de equipe e interface com gestão local." },
+      { "id": "membro-05", "nome": "Operador Épsilon", "role": "tecnico-campo", "responsabilidades": ["Atualizar status de equipamentos", "Executar checklist de contingência", "Apoiar validação final"], "escopo": "Cobertura das áreas de utilidades e apoio de manutenção." }
+    ]
+  },
+  "planner": {
+    "scenarios": [
+      { "id": "base", "label": "Cenário base" },
+      { "id": "pico", "label": "Pico operacional" },
+      { "id": "estabilizado", "label": "Estabilizado" }
+    ],
+    "defaultScenario": "base",
+    "itemsByScenario": {
+      "base": [
+        { "id": "janela-manutencao", "title": "Janela de manutenção", "category": "Calendário", "sapValue": "Semanal fixo (quarta)", "inspflowValue": "Dinâmico por criticidade", "status": "atencao", "impact": "Risco de alocação fora da janela ideal.", "explanation": "SAP mantém janela fixa, enquanto InspFlow ajusta com base em risco e disponibilidade real da equipe.", "recommendation": "Aplicar regra híbrida: janela fixa como baseline e ajuste por criticidade acima de limite definido." },
+        { "id": "prioridade-os", "title": "Prioridade de OS", "category": "Priorização", "sapValue": "Classe A/B/C manual", "inspflowValue": "Score automático de criticidade", "status": "divergente", "impact": "Fila de execução pode inverter itens críticos.", "explanation": "A classificação manual no SAP não acompanha a mesma granularidade de risco calculada no InspFlow.", "recommendation": "Mapear score do InspFlow para classe SAP e criar revisão automática diária." },
+        { "id": "responsavel-turno", "title": "Responsável por turno", "category": "Recursos", "sapValue": "Supervisor setorial", "inspflowValue": "Líder de turno + apoio técnico", "status": "alinhado", "impact": "Baixo, papéis complementares sem conflito.", "explanation": "Os dois sistemas refletem responsáveis compatíveis para governança do turno.", "recommendation": "Manter mapeamento atual e revisar apenas quando houver troca de escala." },
+        { "id": "bloqueio-pecas", "title": "Bloqueio por peças", "category": "Suprimentos", "sapValue": "Status em backlog semanal", "inspflowValue": "Alerta em tempo real", "status": "divergente", "impact": "Atraso na reação para itens críticos com dependência de estoque.", "explanation": "A atualização em lote do SAP pode chegar depois da detecção em campo registrada no InspFlow.", "recommendation": "Criar ponte diária para sincronizar bloqueios críticos entre os dois ambientes." },
+        { "id": "fechamento-end", "title": "Fechamento END", "category": "Conciliação", "sapValue": "Fechamento no fim do dia", "inspflowValue": "Fechamento por etapa", "status": "atencao", "impact": "Diferença de timing entre execução e consolidação gerencial.", "explanation": "O InspFlow aponta avanço incremental, mas o SAP consolida em bloco no encerramento diário.", "recommendation": "Criar checkpoint intermediário para atualização parcial no SAP em etapas críticas." }
+      ],
+      "pico": [
+        { "id": "janela-manutencao", "title": "Janela de manutenção", "category": "Calendário", "sapValue": "Semanal fixo (quarta)", "inspflowValue": "Redistribuída por urgência", "status": "divergente", "impact": "Conflito direto de agenda durante pico de demanda.", "explanation": "Durante pico, o InspFlow reorganiza atividades com frequência e a janela fixa do SAP perde aderência.", "recommendation": "Ativar janela extraordinária no SAP enquanto o modo pico estiver ativo." },
+        { "id": "prioridade-os", "title": "Prioridade de OS", "category": "Priorização", "sapValue": "Classe A/B/C manual", "inspflowValue": "Score automático de criticidade", "status": "divergente", "impact": "Maior risco de itens críticos ficarem atrás na fila.", "explanation": "Com maior volume, a atualização manual de classe no SAP não acompanha a dinâmica do score.", "recommendation": "Executar reconciliação de prioridade a cada 4 horas no modo pico." },
+        { "id": "responsavel-turno", "title": "Responsável por turno", "category": "Recursos", "sapValue": "Supervisor setorial", "inspflowValue": "Líder de turno + apoio técnico", "status": "atencao", "impact": "Sobrecarga de decisão em turnos com equipe reduzida.", "explanation": "A expansão de papéis no InspFlow não está sempre refletida na alocação de recursos do SAP.", "recommendation": "Associar papéis secundários no SAP para turnos de contingência." },
+        { "id": "bloqueio-pecas", "title": "Bloqueio por peças", "category": "Suprimentos", "sapValue": "Status em backlog semanal", "inspflowValue": "Alerta em tempo real", "status": "divergente", "impact": "Bloqueios críticos acumulam mais rapidamente.", "explanation": "No cenário de pico, a defasagem do backlog semanal gera fila de impedimentos acima do normal.", "recommendation": "Atualizar backlog de peças duas vezes ao dia durante janela de pico." },
+        { "id": "fechamento-end", "title": "Fechamento END", "category": "Conciliação", "sapValue": "Fechamento no fim do dia", "inspflowValue": "Fechamento por etapa", "status": "atencao", "impact": "Maior diferença entre execução real e visão consolidada.", "explanation": "A distância temporal entre sistemas cresce quando o volume de etapas simultâneas aumenta.", "recommendation": "Definir gatilho de fechamento parcial por volume de atividades abertas." }
+      ],
+      "estabilizado": [
+        { "id": "janela-manutencao", "title": "Janela de manutenção", "category": "Calendário", "sapValue": "Semanal fixo + ajuste validado", "inspflowValue": "Dinâmico por criticidade", "status": "alinhado", "impact": "Baixo, sincronização previsível.", "explanation": "A janela fixa foi adaptada com checkpoints que refletem prioridade real.", "recommendation": "Manter rotina atual e auditar aderência mensalmente." },
+        { "id": "prioridade-os", "title": "Prioridade de OS", "category": "Priorização", "sapValue": "Classe vinculada ao score", "inspflowValue": "Score automático de criticidade", "status": "alinhado", "impact": "Fila estável e consistente entre sistemas.", "explanation": "A tradução de score para classe removeu ambiguidade na priorização diária.", "recommendation": "Preservar regra de tradução e monitorar exceções semanais." },
+        { "id": "responsavel-turno", "title": "Responsável por turno", "category": "Recursos", "sapValue": "Supervisor + apoio técnico", "inspflowValue": "Líder de turno + apoio técnico", "status": "alinhado", "impact": "Decisão operacional distribuída adequadamente.", "explanation": "A estrutura de papéis está espelhada com baixo conflito entre sistemas.", "recommendation": "Manter mapeamento e revisar apenas em mudança de escala." },
+        { "id": "bloqueio-pecas", "title": "Bloqueio por peças", "category": "Suprimentos", "sapValue": "Backlog diário crítico", "inspflowValue": "Alerta em tempo real", "status": "atencao", "impact": "Pequena defasagem em itens não críticos.", "explanation": "Itens críticos estão sincronizados; a diferença permanece em bloqueios de menor prioridade.", "recommendation": "Expandir sincronização para itens de prioridade média no próximo ciclo." },
+        { "id": "fechamento-end", "title": "Fechamento END", "category": "Conciliação", "sapValue": "Fechamento parcial + diário", "inspflowValue": "Fechamento por etapa", "status": "alinhado", "impact": "Visão gerencial aderente ao ritmo de execução.", "explanation": "Com fechamento parcial, a conciliação entre execução e gestão ficou consistente.", "recommendation": "Padronizar regra para todas as áreas antes da escala completa." }
+      ]
+    }
+  },
+  "closing": {
+    "mensagemFinal": {
+      "titulo": "InspFlow Revitalização pronto para escala",
+      "subtitulo": "Consolidamos uma base operacional e gerencial com visão única, fluxo rastreável e tomada de decisão mais rápida."
+    },
+    "ganhosOperacionais": [
+      "Padronização do registro de inspeção por etapa",
+      "Redução de retrabalho em fechamento END",
+      "Ação mais rápida em bloqueios críticos"
+    ],
+    "ganhosGerenciais": [
+      "Visão consolidada por status e prioridade",
+      "Melhor previsibilidade de execução",
+      "Base consistente para decisões de alocação"
+    ],
+    "takeaways": [
+      { "id": "valor-operacao", "title": "Valor para operação", "summary": "Execução guiada com menos ruído e mais clareza de prioridade.", "detail": "O fluxo reduz variação entre turnos, melhora consistência dos dados e torna bloqueios visíveis no momento certo." },
+      { "id": "valor-gestao", "title": "Valor para gestão", "summary": "Painel com leitura executiva para decisão diária.", "detail": "Com indicadores e reconciliação visíveis, a liderança prioriza com maior confiança e menor atraso de informação." },
+      { "id": "valor-evolucao", "title": "Valor para evolução", "summary": "Arquitetura simples preparada para próximos incrementos.", "detail": "A base estática e modular facilita crescimento por etapas sem dependência de stack complexa no MVP." }
+    ],
+    "proximosPassos": [
+      { "id": "passo-1", "title": "Validar MVP com stakeholders", "description": "Revisão guiada das cenas-chave com operação, planejamento e gestão.", "status": "em andamento" },
+      { "id": "passo-2", "title": "Priorizar backlog incremental", "description": "Definir próximos ganhos de maior impacto para o ciclo seguinte.", "status": "próximo" },
+      { "id": "passo-3", "title": "Planejar rollout controlado", "description": "Aplicar piloto por área com checkpoints de adoção e qualidade.", "status": "planejado" }
+    ],
+    "checklistApresentacao": [
+      { "id": "check-narrativa", "title": "Narrativa executiva alinhada", "summary": "Mensagem final de valor para operação e gestão.", "content": "Reforçar benefícios concretos, evidências visuais e próximos passos com responsáveis definidos." },
+      { "id": "check-demo", "title": "Demonstrações navegáveis prontas", "summary": "Fluxos interativos e CTAs funcionando em sequência.", "content": "Validar previamente #demo-menu, #fluxo-inspecao, #fluxo-end, #equipamentos-equipe, #visao-planejador e #painel-gerencial." },
+      { "id": "check-presenter", "title": "Modo apresentador preparado", "summary": "Console com notas, timer e sincronização de tela.", "content": "Abrir uma aba com ?presenter=1 e outra com ?present=1 para garantir ritmo e coerência da condução." }
+    ]
+  }
+}
