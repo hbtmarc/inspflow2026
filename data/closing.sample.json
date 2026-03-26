@@ -1,0 +1,76 @@
+{
+  "mensagemFinal": {
+    "titulo": "InspFlow Revitalização pronto para escala",
+    "subtitulo": "Consolidamos uma base operacional e gerencial com visão única, fluxo rastreável e tomada de decisão mais rápida."
+  },
+  "ganhosOperacionais": [
+    "Padronização do registro de inspeção por etapa",
+    "Redução de retrabalho em fechamento END",
+    "Ação mais rápida em bloqueios críticos"
+  ],
+  "ganhosGerenciais": [
+    "Visão consolidada por status e prioridade",
+    "Melhor previsibilidade de execução",
+    "Base consistente para decisões de alocação"
+  ],
+  "takeaways": [
+    {
+      "id": "valor-operacao",
+      "title": "Valor para operação",
+      "summary": "Execução guiada com menos ruído e mais clareza de prioridade.",
+      "detail": "O fluxo reduz variação entre turnos, melhora consistência dos dados e torna bloqueios visíveis no momento certo."
+    },
+    {
+      "id": "valor-gestao",
+      "title": "Valor para gestão",
+      "summary": "Painel com leitura executiva para decisão diária.",
+      "detail": "Com indicadores e reconciliação visíveis, a liderança prioriza com maior confiança e menor atraso de informação."
+    },
+    {
+      "id": "valor-evolucao",
+      "title": "Valor para evolução",
+      "summary": "Arquitetura simples preparada para próximos incrementos.",
+      "detail": "A base estática e modular facilita crescimento por etapas sem dependência de stack complexa no MVP."
+    }
+  ],
+  "proximosPassos": [
+    {
+      "id": "passo-1",
+      "title": "Validar MVP com stakeholders",
+      "description": "Revisão guiada das cenas-chave com operação, planejamento e gestão.",
+      "status": "em andamento"
+    },
+    {
+      "id": "passo-2",
+      "title": "Priorizar backlog incremental",
+      "description": "Definir próximos ganhos de maior impacto para o ciclo seguinte.",
+      "status": "próximo"
+    },
+    {
+      "id": "passo-3",
+      "title": "Planejar rollout controlado",
+      "description": "Aplicar piloto por área com checkpoints de adoção e qualidade.",
+      "status": "planejado"
+    }
+  ],
+  "checklistApresentacao": [
+    {
+      "id": "check-narrativa",
+      "title": "Narrativa executiva alinhada",
+      "summary": "Mensagem final de valor para operação e gestão.",
+      "content": "Reforçar benefícios concretos, evidências visuais e próximos passos com responsáveis definidos."
+    },
+    {
+      "id": "check-demo",
+      "title": "Demonstrações navegáveis prontas",
+      "summary": "Fluxos interativos e CTAs funcionando em sequência.",
+      "content": "Validar previamente #demo-menu, #fluxo-inspecao, #fluxo-end, #equipamentos-equipe, #visao-planejador e #painel-gerencial."
+    },
+    {
+      "id": "check-presenter",
+      "title": "Modo apresentador preparado",
+      "summary": "Console com notas, timer e sincronização de tela.",
+      "content": "Abrir uma aba com ?presenter=1 e outra com ?present=1 para garantir ritmo e coerência da condução."
+    }
+  ]
+}

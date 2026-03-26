@@ -1,0 +1,56 @@
+[
+  {
+    "id": "menu-inspecao",
+    "x": 5,
+    "y": 20,
+    "w": 32,
+    "h": 10,
+    "title": "Menu Inspeção",
+    "body": "Acesso principal para iniciar uma nova inspeção com checklist guiado e registro padronizado.",
+    "ariaLabel": "Hotspot do menu inspeção",
+    "routeNext": "#fluxo-inspecao"
+  },
+  {
+    "id": "menu-end",
+    "x": 5,
+    "y": 33,
+    "w": 32,
+    "h": 10,
+    "title": "Menu End-to-End",
+    "body": "Consolida o fluxo de fechamento com status de cada etapa e evidências para auditoria.",
+    "ariaLabel": "Hotspot do menu end to end",
+    "routeNext": "#fluxo-end"
+  },
+  {
+    "id": "notificacoes",
+    "x": 68,
+    "y": 6,
+    "w": 10,
+    "h": 10,
+    "title": "Notificações",
+    "body": "Sinaliza pendências críticas e novos eventos para ação rápida da equipe.",
+    "ariaLabel": "Hotspot de notificações"
+  },
+  {
+    "id": "pendencias",
+    "x": 73,
+    "y": 22,
+    "w": 22,
+    "h": 16,
+    "title": "Painel de Pendências",
+    "body": "Lista atividades abertas por prioridade, facilitando triagem diária do planejador.",
+    "ariaLabel": "Hotspot do painel de pendências",
+    "routeNext": "#visao-planejador"
+  },
+  {
+    "id": "coluna-inspecoes",
+    "x": 41,
+    "y": 22,
+    "w": 26,
+    "h": 58,
+    "title": "Coluna de Inspeções",
+    "body": "Área central com cartões de inspeção em andamento, concluídas e com bloqueio.",
+    "ariaLabel": "Hotspot da coluna de inspeções",
+    "routeNext": "#painel-gerencial"
+  }
+]

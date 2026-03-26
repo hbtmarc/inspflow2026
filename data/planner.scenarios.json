@@ -1,0 +1,20 @@
+{
+  "scenarios": [
+    {
+      "id": "base",
+      "label": "Cenário base",
+      "description": "Operação padrão com carteira atual de inspeções."
+    },
+    {
+      "id": "pico",
+      "label": "Pico operacional",
+      "description": "Aumento de demanda em janela curta e mais bloqueios."
+    },
+    {
+      "id": "estabilizado",
+      "label": "Estabilizado",
+      "description": "Fluxo com reconciliação madura entre planejamento e execução."
+    }
+  ],
+  "defaultScenario": "base"
+}

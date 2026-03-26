@@ -1,0 +1,83 @@
+{
+  "tipos": [
+    { "id": "todos", "label": "Todos" },
+    { "id": "bomba", "label": "Bomba" },
+    { "id": "valvula", "label": "Válvula" },
+    { "id": "sensor", "label": "Sensor" },
+    { "id": "painel", "label": "Painel" }
+  ],
+  "status": [
+    { "id": "todos", "label": "Todos" },
+    { "id": "operacional", "label": "Operacional" },
+    { "id": "atencao", "label": "Atenção" },
+    { "id": "bloqueado", "label": "Bloqueado" }
+  ],
+  "equipamentos": [
+    {
+      "id": "eq-101",
+      "tag": "EQ-101",
+      "nome": "Bomba de recirculação norte",
+      "tipo": "bomba",
+      "status": "operacional",
+      "papelResponsavel": "Técnico de campo",
+      "progresso": 88,
+      "resumo": "Ativo estável com checklist de rotina em dia.",
+      "escopo": "Inspeção diária de vibração e vedação."
+    },
+    {
+      "id": "eq-203",
+      "tag": "EQ-203",
+      "nome": "Válvula de alívio linha B",
+      "tipo": "valvula",
+      "status": "atencao",
+      "papelResponsavel": "Inspetor mecânico",
+      "progresso": 61,
+      "resumo": "Oscilação detectada no último ciclo de validação.",
+      "escopo": "Verificação de pressão, estanqueidade e histórico de acionamento."
+    },
+    {
+      "id": "eq-317",
+      "tag": "EQ-317",
+      "nome": "Sensor térmico setor oeste",
+      "tipo": "sensor",
+      "status": "bloqueado",
+      "papelResponsavel": "Planejador de manutenção",
+      "progresso": 34,
+      "resumo": "Substituição pendente por indisponibilidade de estoque.",
+      "escopo": "Troca de componente e recalibração com equipe elétrica."
+    },
+    {
+      "id": "eq-412",
+      "tag": "EQ-412",
+      "nome": "Painel de comando utilidades",
+      "tipo": "painel",
+      "status": "operacional",
+      "papelResponsavel": "Líder de turno",
+      "progresso": 79,
+      "resumo": "Painel liberado após manutenção preventiva.",
+      "escopo": "Inspeção visual, limpeza técnica e teste funcional."
+    },
+    {
+      "id": "eq-229",
+      "tag": "EQ-229",
+      "nome": "Bomba de transferência sul",
+      "tipo": "bomba",
+      "status": "atencao",
+      "papelResponsavel": "Técnico de campo",
+      "progresso": 56,
+      "resumo": "Necessita nova leitura de vazão para fechamento.",
+      "escopo": "Medição de vazão e ajuste de parâmetros operacionais."
+    },
+    {
+      "id": "eq-188",
+      "tag": "EQ-188",
+      "nome": "Válvula de controle principal",
+      "tipo": "valvula",
+      "status": "operacional",
+      "papelResponsavel": "Inspetor mecânico",
+      "progresso": 92,
+      "resumo": "Comportamento dentro da faixa esperada.",
+      "escopo": "Conferência de abertura/fechamento e vedação."
+    }
+  ]
+}

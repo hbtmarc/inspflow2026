@@ -1,0 +1,77 @@
+{
+  "id": "fluxo-inspecao",
+  "titulo": "Fluxo de inspeção operacional",
+  "descricao": "Acompanhe as etapas críticas da inspeção e o que pode travar cada ponto.",
+  "layout": "stepper",
+  "stages": [
+    {
+      "id": "tag",
+      "label": "TAG",
+      "status": "concluido",
+      "resumo": "Identificação validada e vínculo com ativo confirmado.",
+      "detalhes": "Nesta etapa a TAG é conferida com cadastro oficial para evitar abertura em ativo incorreto.",
+      "oQueTrava": "TAG ilegível ou divergência entre etiqueta física e cadastro.",
+      "criterios": [
+        "Ativo identificado",
+        "TAG associada ao local correto",
+        "Registro inicial salvo"
+      ]
+    },
+    {
+      "id": "abertura",
+      "label": "Abertura",
+      "status": "andamento",
+      "resumo": "Ordem aberta com responsável, turno e prioridade.",
+      "detalhes": "A abertura organiza contexto operacional para execução consistente da inspeção em campo.",
+      "oQueTrava": "Campos obrigatórios incompletos ou responsável não definido.",
+      "criterios": [
+        "Responsável informado",
+        "Prioridade definida",
+        "Prazo inicial registrado"
+      ]
+    },
+    {
+      "id": "servicos",
+      "label": "Serviços",
+      "status": "bloqueio",
+      "resumo": "Execução parcial aguardando liberação de recurso.",
+      "detalhes": "A equipe registra serviços realizados e pendências técnicas durante a atividade.",
+      "oQueTrava": "Dependência de equipe de apoio e indisponibilidade de equipamento.",
+      "criterios": [
+        "Checklist técnico percorrido",
+        "Evidências coletadas",
+        "Pendências mapeadas"
+      ]
+    },
+    {
+      "id": "validacao",
+      "label": "Validação",
+      "status": "andamento",
+      "resumo": "Conferência de conformidade e consistência dos apontamentos.",
+      "detalhes": "Validação garante que o registro atende critérios de qualidade antes da conclusão.",
+      "oQueTrava": "Evidência insuficiente ou inconsistência entre campo e sistema.",
+      "criterios": [
+        "Checklist validado",
+        "Pendências justificadas",
+        "Conformidade registrada"
+      ]
+    },
+    {
+      "id": "conclusao",
+      "label": "Conclusão",
+      "status": "andamento",
+      "resumo": "Encerramento operacional com status final e histórico.",
+      "detalhes": "Etapa final para consolidar decisão e preparar integração com o fluxo END.",
+      "oQueTrava": "Aprovação final pendente ou falta de anexo obrigatório.",
+      "criterios": [
+        "Status final definido",
+        "Resumo operacional preenchido",
+        "Pronto para transição ao END"
+      ]
+    }
+  ],
+  "cta": {
+    "label": "Avançar para fluxo END",
+    "route": "#fluxo-end"
+  }
+}
