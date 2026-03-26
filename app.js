@@ -587,7 +587,7 @@ function renderClosingScene(el, closing) {
       </section>
       <section class="takeaways" aria-label="Takeaways">
         <div>
-          <h3 style="margin:0 0 .75rem;font-size:1rem;font-weight:700">3 mensagens-chave</h3>
+          <h3 class="takeaways-title">3 mensagens-chave</h3>
           <div class="takeaway-cards" id="cl-cards"></div>
         </div>
         <aside class="panel" aria-live="polite" aria-atomic="true">

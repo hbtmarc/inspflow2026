@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'inspflow-v2.0.0';
+const CACHE_VERSION = 'inspflow-v2.1.0';
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const HTML_CACHE = `${CACHE_VERSION}-html`;
